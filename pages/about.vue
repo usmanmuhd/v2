@@ -1,15 +1,14 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">Muhammad Usman</h1>
+      <h1 class="title">About Me</h1>
       <h2>Site under construction!</h2>
       <div class="links">
         <a href="mailto:me@usmanmuhd.com" class="button--green">
           Get In Touch
         </a>
-        <a href="/about" class="button--green">
-          About Me
+        <a href="/" class="button--green">
+          Home Page
         </a>
       </div>
     </div>
