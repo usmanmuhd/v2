@@ -3,22 +3,10 @@
     <div>
       <Logo />
       <h1 class="title">usmanmuhd.com</h1>
+      <h2>Site under construction!</h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
+        <a href="mailto:me@usmanmuhd.com" class="button--green">
+          Get In Touch
         </a>
       </div>
     </div>
