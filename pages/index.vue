@@ -8,7 +8,7 @@
         <a href="mailto:me@usmanmuhd.com" class="button--green">
           Get In Touch
         </a>
-        <a href="/about" class="button--green">
+        <a href="/about" class="button--grey">
           About Me
         </a>
       </div>

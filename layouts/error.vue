@@ -2,16 +2,15 @@
   <div class="container">
     <div>
       <div>
-        <h1 v-if="error.statusCode === 404">Page not found</h1>
+        <h1 v-if="error.statusCode === 404">Error 404 - Page not found</h1>
         <h1 v-else>An error occurred - {{ error.statusCode }} </h1>
       </div>
-      <h1 class="title">usmanmuhd.com</h1>
       <h2>Site under construction!</h2>
       <div class="links">
         <a href="mailto:me@usmanmuhd.com" class="button--green">
           Get In Touch
         </a>
-        <a href="/" class="button--green">
+        <a href="/" class="button--grey">
           Home Page
         </a>
       </div>
