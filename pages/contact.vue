@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">About Me</h1>
+      <h1 class="title">Contact Me</h1>
+      <h1><a href="mailto:me@usmanmuhd.com">Get In Touch</a></h1>
       <h2>Site under construction!</h2>
     </div>
   </div>

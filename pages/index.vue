@@ -1,24 +1,15 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <!-- <Logo /> -->
       <h1 class="title">Muhammad Usman</h1>
       <h2>Site under construction!</h2>
-      <div class="links">
-        <a href="mailto:me@usmanmuhd.com" class="button--green">
-          Get In Touch
-        </a>
-        <a href="/about" class="button--grey">
-          About Me
-        </a>
-      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
 export default Vue.extend({})
 </script>
 

@@ -1,20 +1,82 @@
 <template>
-  <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="/">Muhammad Usman</b-navbar-brand>
+  <nav
+    class="navbar is-fixed-top top-navbar"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <div class="navbar-title">Muhammad Usman</div>
+        </a>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <a
+          :aria-expanded="isActive"
+          :class="{ 'is-active': isActive }"
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          data-target="navbarMenu"
+          @click="isActive = !isActive"
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </a>
+      </div>
 
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto">
-          <b-button href="/resume.pdf" squared variant="info">Resume</b-button>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </div>
+      <div
+        :class="{ 'is-active': isActive }"
+        id="navbarMenu"
+        class="navbar-menu"
+      >
+        <div class="navbar-end">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/about/"> About Me </a>
+            <a class="navbar-item" href="/resume.pdf"> Resume </a>
+            <a class="navbar-item" href="/contact/"> Contact Me </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      isActive: false,
+      showNavbar: true
+    }
+  },
+})
 </script>
+
+<style scoped>
+@media (min-width: 1024px) {
+  .top-navbar {
+    padding: 16px 0;
+  }
+}
+.top-navbar {
+  border-bottom: 1px solid #ebeaeb;
+}
+.navbar.is-fixed-top {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+.navbar-title {
+  font-weight: bold;
+  font-size: 150%;
+}
+.nuxt-link-exact-active {
+  color: black;
+}
+* {
+  font-family: var(--font-family);
+}
+</style>

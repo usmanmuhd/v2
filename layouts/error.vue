@@ -6,23 +6,15 @@
         <h1 v-else>An error occurred - {{ error.statusCode }} </h1>
       </div>
       <h2>Site under construction!</h2>
-      <div class="links">
-        <a href="mailto:me@usmanmuhd.com" class="button--green">
-          Get In Touch
-        </a>
-        <a href="/" class="button--grey">
-          Home Page
-        </a>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    props: ['error'],
-    layout: 'error' // you can set a custom layout for the error page
-  }
+import Vue from 'vue';
+export default Vue.extend({
+  props: ['error']
+});
 </script>
 
 

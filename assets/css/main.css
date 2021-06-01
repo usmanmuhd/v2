@@ -1,0 +1,8 @@
+:root {
+  --navbar-bg-color: yellow;
+  --fg-color: rgba(255, 255, 255, 0.9);
+  --bg-color: #2b2b2b;
+  --highlight-primary: #008aff;
+  --nav-height: 3rem;
+  --font-family: Inter, sans-serif;
+}
