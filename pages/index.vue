@@ -1,10 +1,26 @@
 <template>
-  <div class="container">
-    <div>
-      <!-- <Logo /> -->
-      <h1 class="title">Muhammad Usman</h1>
-      <h2>Site under construction!</h2>
-    </div>
+  <div>
+    <section class="hero is-large top-hero">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-half">
+              <p class="title">Muhammad Usman</p>
+              <p class="intro">Software Engineer @ Cisco</p>
+              <br>
+              <button class="button is-primary is-light">
+                <a href="mailto:me@usmanmuhd.com">
+                  Get In Touch
+                </a>
+              </button>
+            </div>
+            <div class="column">
+              <p class="intro">Site Under Construction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -13,35 +29,22 @@ import Vue from 'vue'
 export default Vue.extend({})
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+.top-hero {
+  background-color: var(--hero-bg-color);
 }
-
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-size: 400%;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.intro {
+  font-size: 40px;
 }
-
-.links {
-  padding-top: 15px;
+@media (max-width: 1023px) {
+  .title {
+    font-size: 300%;
+  }
+  .intro {
+    font-size: 30px;
+  }
 }
 </style>
